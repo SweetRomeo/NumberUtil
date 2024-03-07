@@ -77,7 +77,7 @@ void BallShape(int height,const int width)
         printf("\n");
     }
 }
-void BallShapeTest()
+void BallShapeTest(void)
 {
     int height,width;
     printf("Enter Height?\n");
