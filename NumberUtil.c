@@ -16,7 +16,7 @@ int getHundredsDigit(int val){ return  val / 100;}
 bool isPrime(int);
 int getPrimeFactorsSum(int);
 int reverseNumber(int);
-int getDigitsSum(int val);
+int getDigitsSum(int);
 
 bool areFriends(const int x,const int y)
 {
