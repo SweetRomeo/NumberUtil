@@ -34,4 +34,5 @@ bool isSuperPrime(int);
 int reverseNumber(int);
 void Operation(void);
 void Goldbach(int);
+void Operation(void);
 #endif //UNTITLED2_NUMBERUTIL_H
