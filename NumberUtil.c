@@ -455,7 +455,7 @@ void Operation(void) {
     double average = 0.0;
     while (true) {
         printf("Yeni bir deger girmek istiyor musunuz?"
-               "[Evet için 1(bir) Hayır için 0(sıfır) değerlerinden birini giriniz]");
+               "[Evet icin 1(bir) Hayir icin 0(sıfır) degerlerinden birini giriniz]");
         char check;
         while ((check = getchar()) != '0' && check != '1')
                 ;
