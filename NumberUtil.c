@@ -447,7 +447,43 @@ void printFactors(int val)
     }
 }
 
-
+void Operation(void) {
+    int count = 0;
+    int sum = 0;
+    int max = INT_MIN;
+    int min = INT_MAX;
+    double average = 0.0;
+    while (true) {
+        printf("Yeni bir deger girmek istiyor musunuz?"
+               "[Evet için 1(bir) Hayır için 0(sıfır) değerlerinden birini giriniz]");
+        char check;
+        while ((check = getchar()) != '0' && check != '1')
+                ;
+        if (check == '0') {
+            break;
+        }
+        int val;
+        printf("Bir tamsayi giriniz?\n");
+        scanf("%d", &val);
+        while (val > 100 || val < 0) {
+            printf("Gecersiz giris\n");
+            printf("Yeni bir giriniz\n");
+            scanf("%d", &val);
+        }
+        if (max < val) {
+           max = val;
+        }
+        if (min > val) {
+            min = val;
+        }
+        count++;
+        sum += val;
+    }
+    printf("Toplam %d deger girildi\n", count);
+    printf("Max = %d\n", max);
+    printf("Min = %d\n", min);
+    printf("Ortalama = %lf\n", (double)sum / count);
+}
 
 
 
