@@ -18,7 +18,7 @@ int getPrimeFactorsSum(int);
 int reverseNumber(int);
 int getDigitsSum(int);
 
-bool areFriends(const int x,const int y)
+bool areFriends(const int x, const int y)
 {
     return x == getPrimeFactorsSum(y) && y == getPrimeFactorsSum(x) && x != y;
 }
@@ -36,9 +36,9 @@ void printDiamond(const int n)
     bool directionFlag = true;
     int x = 0;
     while(1){
-        for(int i = x;i < n - 1;++i)
+        for(int i = x; i < n - 1; ++i)
             printf(" ");
-        for(int i = 0;i < 2 * x + 1;++i)
+        for(int i = 0; i < 2 * x + 1; ++i)
             printf("*");
         if(x == n - 1)
             directionFlag = false;
